@@ -1,57 +1,10 @@
 <h1 style="color: red;">Hello {{title}}</h1>
 
 <!-- counter -->
-<div class="counter">
-  <h2>Counter</h2>
-  <button (click)="increment()">+</button>
-  <span>{{counterValue}}</span>
-  <button (click)="decrement()">-</button>
-</div>
+<app-counter-example></app-counter-example>
 
-
-<p>My name is <button (click)="getName('sidharth')">show</button></p>
-
-<h2>The Input Click events</h2>
-<p>
-<input #up id="up" type="text" placeholder="Keyup Box" (keyup)=getKeyUp(up.value)>
-<!-- The #something should be unique and selected it selecs the element -->
-<button (click)="getValue(up.value)">show</button>
-<br>
-<label for="up">{{keyupValue}}</label>
-</p>
-
-<p> 
-  <input #down id="down" type="text" placeholder="Keydown Box" (keydown)=getKeyDown(down.value)>
-<button (click)="getValue(down.value)">show</button>
-
-  <br>
-  <label for="down">{{keydownValue}}</label>
-</p>
-
-<p>
-  <input #blur id="blur" type="text" placeholder="Keyblur Box" (blur)=getBlur(blur.value)>
-<button (click)="getValue(blur.value)">show</button>
-
-  <br>
-  <label for="blur">{{blurValue}}</label>
-</p>
-
-<p>
-  <input #input id="input" type="text" placeholder="Keyinput Box" (input)=getInput(input.value)>
-<button (click)="getValue(input.value)">show</button>
-
-  <br>
-  <label for="input">{{inputValue}}</label>
-</p>
-
-
-<p>
-  <input #show id="show" type="text" placeholder="show Box">
- 
-  
-  <label for="show"> The entered value is {{showValue}} <button (click)="getValue(show.value)">show</button></label>
-  <br>
-</p>
+<!-- Event Handling and Function calling -->
+<app-event-handling></app-event-handling>
 
 <app-header></app-header>
 <app-header></app-header>

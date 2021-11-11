@@ -8,7 +8,9 @@ import { HeaderComponent } from './header/header.component';
 import { InlineStyleComponent } from './inline-style/inline-style.component';
 import { InlineTemplateComponent } from './inline-template/inline-template.component';
 import { InlineComponent } from './inline/inline.component';
-import { SampleModuleModule } from './sample-module/sample-module.module'
+import { SampleModuleModule } from './sample-module/sample-module.module';
+import { CounterExampleComponent } from './counter-example/counter-example.component';
+import { EventHandlingComponent } from './event-handling/event-handling.component'
 // import {  } from './sample-module/sample-module.module'
 
 
@@ -19,7 +21,9 @@ import { SampleModuleModule } from './sample-module/sample-module.module'
     HeaderComponent,
     InlineStyleComponent,
     InlineTemplateComponent,
-    InlineComponent
+    InlineComponent,
+    CounterExampleComponent,
+    EventHandlingComponent
   ],
   imports: [
     BrowserModule,
